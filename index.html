@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptography Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cryptography Web App</h1>
+    <div class="form">
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Enter your message"></textarea>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password">
+
+      <label for="type">Encryption Type:</label>
+      <select id="type">
+        <option value="ai">AI Encryption</option>
+        <option value="quantum">Quantum Encryption</option>
+        <option value="post_quantum">Post-Quantum Encryption</option>
+      </select>
+
+      <button id="encrypt-btn">Encrypt</button>
+      <button id="decrypt-btn">Decrypt</button>
+    </div>
+
+    <div class="output">
+      <h3>Result:</h3>
+      <p id="result"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
